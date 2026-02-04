@@ -1,0 +1,7 @@
+flowchart LR
+  A[Source Systems\nJira • GitHub • Notion] --> B[Ingestion\nExtract + Normalize]
+  B --> C[Data Layer\nCanonical Schema + History]
+  C --> D[Scoring + Metrics\nDCS • Scope Volatility • Risk Signals]
+  D --> E[AI Interpretation\nWeekly Brief • Risks • Decisions]
+  E --> F[Publishing\nNotion DB • Dashboards • Reports]
+  F -->|Feedback| A
