@@ -1,0 +1,110 @@
+{
+  "portfolio": {
+    "week_ending": "2026-02-06",
+    "total_initiatives": 6
+  },
+  "initiatives": [
+    {
+      "id": "INIT-001",
+      "name": "AI Modernization Engine v1",
+      "dcs_current": 84,
+      "dcs_prior": 79,
+      "band": "Green",
+      "blocked_days": 0,
+      "scope_changes_14d": 0,
+      "days_stagnant": 1,
+      "dependency_count": 1,
+      "critical_dependency": false,
+      "days_to_target": 21,
+      "status_notes": [
+        "RSS ingestion stable; Notion write path validated",
+        "Rotation schedule working; weekly brief format stabilized"
+      ]
+    },
+    {
+      "id": "INIT-002",
+      "name": "Platform Observability Rollout",
+      "dcs_current": 72,
+      "dcs_prior": 80,
+      "band": "Yellow",
+      "blocked_days": 3,
+      "scope_changes_14d": 2,
+      "days_stagnant": 4,
+      "dependency_count": 4,
+      "critical_dependency": true,
+      "days_to_target": 12,
+      "status_notes": [
+        "API instability delaying integration testing",
+        "New reporting requirement introduced mid-sprint"
+      ]
+    },
+    {
+      "id": "INIT-003",
+      "name": "AppSec Program Revamp",
+      "dcs_current": 66,
+      "dcs_prior": 67,
+      "band": "Yellow",
+      "blocked_days": 1,
+      "scope_changes_14d": 3,
+      "days_stagnant": 2,
+      "dependency_count": 2,
+      "critical_dependency": false,
+      "days_to_target": 18,
+      "status_notes": [
+        "Policy review feedback loop slower than expected",
+        "Standards doc expanded; needs scope boundary"
+      ]
+    },
+    {
+      "id": "INIT-004",
+      "name": "Data Quality Monitoring",
+      "dcs_current": 58,
+      "dcs_prior": 63,
+      "band": "Red",
+      "blocked_days": 4,
+      "scope_changes_14d": 1,
+      "days_stagnant": 6,
+      "dependency_count": 5,
+      "critical_dependency": true,
+      "days_to_target": 9,
+      "status_notes": [
+        "Upstream schema changes breaking checks",
+        "Dependency on data platform team for pipeline stabilization"
+      ]
+    },
+    {
+      "id": "INIT-005",
+      "name": "Jira Automation Standardization",
+      "dcs_current": 78,
+      "dcs_prior": 74,
+      "band": "Yellow",
+      "blocked_days": 0,
+      "scope_changes_14d": 1,
+      "days_stagnant": 1,
+      "dependency_count": 1,
+      "critical_dependency": false,
+      "days_to_target": 14,
+      "status_notes": [
+        "Roll-up logic validated in sandbox",
+        "Branch constraints documented; patterns published"
+      ]
+    },
+    {
+      "id": "INIT-006",
+      "name": "Quarterly Planning Operating Model",
+      "dcs_current": 88,
+      "dcs_prior": 85,
+      "band": "Green",
+      "blocked_days": 0,
+      "scope_changes_14d": 0,
+      "days_stagnant": 0,
+      "dependency_count": 0,
+      "critical_dependency": false,
+      "days_to_target": 30,
+      "status_notes": [
+        "Templates finalized; leadership review scheduled",
+        "Decision log structure implemented in Notion"
+      ]
+    }
+  ]
+}
