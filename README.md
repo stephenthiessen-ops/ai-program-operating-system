@@ -22,3 +22,13 @@ Traditional program management tracks work.
 AI-native program leadership interprets work.
 
 This OS is designed to reduce cognitive load, surface risk early, and convert operational telemetry into strategic clarity.
+
+## Demo Output
+- Latest executive brief: [`outputs/exec-brief_LATEST.md`](outputs/exec-brief_LATEST.md)
+
+## How it works (high level)
+1. Normalize execution data into a canonical schema
+2. Derive deterministic signals (confidence, volatility, risk)
+3. Generate a decision-oriented exec brief
+4. Publish outputs back into the operating cadence
+5. Repeat weekly via GitHub Actions
