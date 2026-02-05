@@ -32,3 +32,14 @@ This OS is designed to reduce cognitive load, surface risk early, and convert op
 3. Generate a decision-oriented exec brief
 4. Publish outputs back into the operating cadence
 5. Repeat weekly via GitHub Actions
+
+## Latest Outputs
+- Executive brief: [`outputs/exec-brief_LATEST.md`](outputs/exec-brief_LATEST.md)
+- Portfolio heatmap (CSV): [`outputs/portfolio_heatmap.csv`](outputs/portfolio_heatmap.csv)
+- Heatmap summary: [`outputs/portfolio_heatmap_SUMMARY.md`](outputs/portfolio_heatmap_SUMMARY.md)
+
+## Dashboard Demo
+Run locally:
+```bash
+pip install -r requirements.txt
+streamlit run app/streamlit_app.py
