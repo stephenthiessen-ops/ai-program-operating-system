@@ -1,0 +1,8 @@
+Issue key,Issue Type,Summary,Status,Parent key,Story Points,Assignee,Updated,Due date,Blocks,Blocked Days,Scope Changes (14d)
+INIT-10,Initiative,AI Program OS,In Progress,, ,Stephen,2026-02-04,2026-03-01,2,0,0
+EPIC-21,Epic,Exec Brief Automation,In Progress,INIT-10, ,Stephen,2026-02-04,2026-02-28,1,0,1
+STORY-33,Story,Generate brief markdown,In Progress,EPIC-21,5,Stephen,2026-02-03,2026-02-20,0,1,1
+STORY-34,Story,Add GitHub Actions workflow,Done,EPIC-21,3,Stephen,2026-02-02,2026-02-10,0,0,0
+INIT-11,Initiative,Data Quality Monitoring,In Progress,, ,Unassigned,2026-02-04,2026-02-13,4,4,1
+EPIC-30,Epic,Schema drift detection,Blocked,INIT-11, ,Team,2026-02-04,2026-02-10,3,4,1
+STORY-40,Story,Fix check failures,Blocked,EPIC-30,8,Team,2026-02-04,2026-02-07,3,4,1
