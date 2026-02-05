@@ -1,26 +1,21 @@
-# Weekly Executive Brief — Week Ending 2026-02-06
+# Weekly Executive Brief — Week Ending 2026-02-05
 
 ## Portfolio Snapshot
-- Total initiatives: **6**
-- Confidence bands: **Green 2** / **Yellow 3** / **Red 1**
-- Largest decline: **Platform Observability Rollout** (Yellow, 72 ↓ -8)
-- Largest improvement: **AI Modernization Engine v1** (Green, 84 ↑ +5)
+- Total initiatives: **2**
+- Confidence bands: **Green 0** / **Yellow 0** / **Red 2**
+- Largest decline: **Data Quality Monitoring** (Red, 0 ↓ -8)
+- Largest improvement: **AI Program OS** (Red, 45 ↓ -4)
 
 ## Top Emerging Risks (Decision-Oriented)
-- **Data Quality Monitoring** — Red (**58 ↓ -5**) | Drivers: blocked 4d, stagnant 6d, deps 5 (critical) | Target: 9d
-  - Decision prompt: *Remove blocker or re-route critical path; Escalate dependency alignment / sequence work*
-  - Context: Upstream schema changes breaking checks
-- **Platform Observability Rollout** — Yellow (**72 ↓ -8**) | Drivers: blocked 3d, scope changes 2/14d, stagnant 4d, deps 4 (critical) | Target: 12d
+- **Data Quality Monitoring** — Red (**0 ↓ -8**) | Drivers: blocked 4d, scope changes 3/14d, stagnant 4d, deps 10 (critical) | Target: 2d
   - Decision prompt: *Freeze scope / lock acceptance criteria; Remove blocker or re-route critical path*
-  - Context: API instability delaying integration testing
-- **AppSec Program Revamp** — Yellow (**66 ↓ -1**) | Drivers: scope changes 3/14d | Target: 18d
-  - Decision prompt: *Freeze scope / lock acceptance criteria*
-  - Context: Policy review feedback loop slower than expected
+  - Context: Blocked: Schema drift detection
+- **AI Program OS** — Red (**45 ↓ -4**) | Drivers: scope changes 2/14d | Target: 5d
+  - Decision prompt: *Freeze scope / lock acceptance criteria; Decide: add capacity vs reduce deliverable surface area vs accept slip*
+  - Context: No significant blockers detected in snapshot.
 
 ## Notable Positive Momentum
-- **AI Modernization Engine v1** — Green (**84 ↑ +5**) | Target: 21d
-- **Jira Automation Standardization** — Yellow (**78 ↑ +4**) | Target: 14d
-- **Quarterly Planning Operating Model** — Green (**88 ↑ +3**) | Target: 30d
+- No significant positive movement this week; focus on stabilizing top risks.
 
 ## Decision Prompts Summary
 - Scope: Where volatility is increasing, decide whether to freeze scope or re-baseline commitments.

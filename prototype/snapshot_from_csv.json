@@ -1,0 +1,42 @@
+{
+  "portfolio": {
+    "week_ending": "2026-02-05",
+    "total_initiatives": 2,
+    "source": "csv_transform"
+  },
+  "initiatives": [
+    {
+      "id": "INIT-11",
+      "name": "Data Quality Monitoring",
+      "dcs_current": 0,
+      "dcs_prior": 8,
+      "band": "Red",
+      "blocked_days": 4,
+      "scope_changes_14d": 3,
+      "days_stagnant": 4,
+      "dependency_count": 10,
+      "critical_dependency": true,
+      "days_to_target": 2,
+      "status_notes": [
+        "Blocked: Schema drift detection",
+        "Blocked: Fix check failures"
+      ]
+    },
+    {
+      "id": "INIT-10",
+      "name": "AI Program OS",
+      "dcs_current": 45,
+      "dcs_prior": 49,
+      "band": "Red",
+      "blocked_days": 1,
+      "scope_changes_14d": 2,
+      "days_stagnant": 1,
+      "dependency_count": 3,
+      "critical_dependency": false,
+      "days_to_target": 5,
+      "status_notes": [
+        "No significant blockers detected in snapshot."
+      ]
+    }
+  ]
+}
