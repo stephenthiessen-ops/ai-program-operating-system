@@ -24,19 +24,31 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Create outputs directory (if missing)
-        run: mkdir -p outputs
+      - name: Create required directories
+        run: |
+          mkdir -p outputs
+          mkdir -p prototype
 
-      - name: Generate executive brief
+      # STEP 1 — Transform Jira CSV into structured snapshot
+      - name: Transform CSV to snapshot JSON
+        run: |
+          python prototype/transform_jira_csv_to_snapshot.py \
+            --input prototype/jira_export_SAMPLE.csv \
+            --output prototype/snapshot_from_csv.json \
+            --week-ending $(date -u +"%Y-%m-%d")
+
+      # STEP 2 — Generate executive brief from snapshot
+      - name: Generate executive brief (Markdown)
         run: |
           python prototype/generate_exec_brief.py \
-            --input prototype/sample_snapshot.json \
+            --input prototype/snapshot_from_csv.json \
             --output outputs/exec-brief_LATEST.md
 
+      # STEP 3 — Commit and push updated output
       - name: Commit and push output
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add outputs/exec-brief_LATEST.md
+          git add outputs/exec-brief_LATEST.md prototype/snapshot_from_csv.json
           git commit -m "chore: weekly executive brief update" || echo "No changes to commit"
           git push
