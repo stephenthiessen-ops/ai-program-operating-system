@@ -1,18 +1,15 @@
 name: Weekly Executive Brief
 
 on:
-  # Run every Friday at 14:00 UTC
   schedule:
     - cron: "0 14 * * FRI"
-
-  # Allow manual trigger from GitHub UI
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  generate-brief:
+  generate-artifacts:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,9 +24,7 @@ jobs:
       - name: Create required directories
         run: |
           mkdir -p outputs
-          mkdir -p prototype
 
-      # STEP 1 — Transform Jira CSV into structured snapshot
       - name: Transform CSV to snapshot JSON
         run: |
           python prototype/transform_jira_csv_to_snapshot.py \
@@ -37,18 +32,23 @@ jobs:
             --output prototype/snapshot_from_csv.json \
             --week-ending $(date -u +"%Y-%m-%d")
 
-      # STEP 2 — Generate executive brief from snapshot
       - name: Generate executive brief (Markdown)
         run: |
           python prototype/generate_exec_brief.py \
             --input prototype/snapshot_from_csv.json \
             --output outputs/exec-brief_LATEST.md
 
-      # STEP 3 — Commit and push updated output
-      - name: Commit and push output
+      - name: Generate portfolio heatmap artifacts
+        run: |
+          python prototype/generate_portfolio_heatmap.py \
+            --input prototype/snapshot_from_csv.json \
+            --out-csv outputs/portfolio_heatmap.csv \
+            --out-md outputs/portfolio_heatmap_SUMMARY.md
+
+      - name: Commit and push artifacts
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add outputs/exec-brief_LATEST.md prototype/snapshot_from_csv.json
-          git commit -m "chore: weekly executive brief update" || echo "No changes to commit"
+          git add outputs/exec-brief_LATEST.md outputs/portfolio_heatmap.csv outputs/portfolio_heatmap_SUMMARY.md prototype/snapshot_from_csv.json
+          git commit -m "chore: weekly portfolio artifacts update" || echo "No changes to commit"
           git push
