@@ -1,4 +1,4 @@
-# Weekly Executive Brief — Week Ending 2026-02-06
+# Weekly Executive Brief — Week Ending 2026-02-13
 
 ## Portfolio Snapshot
 - Total initiatives: **2**
@@ -7,10 +7,10 @@
 - Largest improvement: **AI Program OS** (Red, 45 ↓ -4)
 
 ## Top Emerging Risks (Decision-Oriented)
-- **Data Quality Monitoring** — Red (**0 ↓ -8**) | Drivers: blocked 4d, scope changes 3/14d, stagnant 4d, deps 10 (critical) | Target: 1d
+- **Data Quality Monitoring** — Red (**0 ↓ -8**) | Drivers: blocked 4d, scope changes 3/14d, stagnant 4d, deps 10 (critical) | Target: -6d
   - Decision prompt: *Freeze scope / lock acceptance criteria; Remove blocker or re-route critical path*
   - Context: Blocked: Schema drift detection
-- **AI Program OS** — Red (**45 ↓ -4**) | Drivers: scope changes 2/14d | Target: 4d
+- **AI Program OS** — Red (**45 ↓ -4**) | Drivers: scope changes 2/14d | Target: -3d
   - Decision prompt: *Freeze scope / lock acceptance criteria; Decide: add capacity vs reduce deliverable surface area vs accept slip*
   - Context: No significant blockers detected in snapshot.
 
