@@ -1,4 +1,4 @@
-# Portfolio Heatmap Summary — Week Ending 2026-07-17
+# Portfolio Heatmap Summary — Week Ending 2026-07-24
 
 ## Highest Portfolio Risk Drivers (aggregate intensity)
 - **Due Proximity**: 20
