@@ -1,6 +1,6 @@
 {
   "portfolio": {
-    "week_ending": "2026-07-24",
+    "week_ending": "2026-07-31",
     "total_initiatives": 2,
     "source": "csv_transform"
   },
@@ -16,7 +16,7 @@
       "days_stagnant": 4,
       "dependency_count": 10,
       "critical_dependency": true,
-      "days_to_target": -167,
+      "days_to_target": -174,
       "status_notes": [
         "Blocked: Schema drift detection",
         "Blocked: Fix check failures"
@@ -33,7 +33,7 @@
       "days_stagnant": 1,
       "dependency_count": 3,
       "critical_dependency": false,
-      "days_to_target": -164,
+      "days_to_target": -171,
       "status_notes": [
         "No significant blockers detected in snapshot."
       ]
